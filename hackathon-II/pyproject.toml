@@ -1,0 +1,36 @@
+[project]
+name = "cli-todo-app"
+version = "0.1.0"
+description = "Phase I: In-memory CLI Todo Application"
+readme = "specs/001-cli-todo-app/quickstart.md"
+requires-python = ">=3.13"
+license = {text = "MIT"}
+authors = [
+    {name = "Evolution of Todo Team"}
+]
+keywords = ["todo", "cli", "task-management"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+todo = "src.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
