@@ -1,0 +1,26 @@
+# Phase 2 Full-Stack Todo App - Backend Dependencies
+
+# Web Framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+
+# ORM and Database
+sqlmodel>=0.0.14
+psycopg2-binary>=2.9.9
+alembic>=1.13.0
+
+# Authentication
+python-jose[cryptography]>=3.3.0
+
+# HTTP Client
+httpx>=0.26.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+
+# Type checking (optional)
+mypy>=1.8.0
