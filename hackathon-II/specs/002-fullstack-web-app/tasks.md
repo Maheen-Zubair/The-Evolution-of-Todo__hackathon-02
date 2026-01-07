@@ -7,7 +7,7 @@ phase: 2
 feature: 002-fullstack-web-app
 created: 2025-01-06
 updated: 2025-01-07
-progress: 75/76 tasks completed (99%)
+progress: 76/76 tasks completed (100%)
 ---
 
 # Tasks: Phase 2 Full-Stack Web Application
@@ -122,7 +122,7 @@ progress: 75/76 tasks completed (99%)
 
 - [x] T031 [P] [US2] Create backend/app/models/task.py with Task, TaskCreate, TaskUpdate, TaskPatch, TaskRead SQLModel classes
 - [x] T032 [US2] Create Alembic migration for task table in backend/migrations/versions/
-- [ ] T033 [US2] Run migration to create task table with indexes
+- [x] T033 [US2] Run migration to create task table with indexes
 - [x] T034 [US2] Create backend/app/routers/tasks.py with FastAPI router
 - [x] T035 [US2] Implement GET /api/tasks endpoint with filtering (status, limit, offset, sort, order)
 - [x] T036 [US2] Implement GET /api/tasks/{task_id} endpoint with ownership check
@@ -212,7 +212,7 @@ progress: 75/76 tasks completed (99%)
 - [x] T073 [P] Create backend/README.md with setup instructions
 - [x] T074 [P] Update root README.md with Phase 2 quick start
 - [x] T075 Verify OpenAPI docs auto-generated at /docs
-- [ ] T076 Run accessibility audit (axe-core) and fix critical issues
+- [x] T076 Run accessibility audit (axe-core) and fix critical issues
 
 **Checkpoint**: Phase 2 complete - all tests passing, documentation updated, ready for demo
 

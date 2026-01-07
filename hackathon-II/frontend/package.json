@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:a11y": "playwright test --project=a11y",
+    "test:a11y:report": "playwright test --project=a11y --reporter=html"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -27,6 +29,8 @@
     "zod": "^4.3.5"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.49.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
