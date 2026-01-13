@@ -74,12 +74,18 @@ export function TaskForm({ mode, task }: TaskFormProps) {
     setError(null);
 
     try {
+      // Transform empty description to null
+      const payload = {
+        ...data,
+        description: data.description?.trim() || null,
+      };
+
       if (isCreate) {
-        await createMutation.mutateAsync(data as TaskCreate);
+        await createMutation.mutateAsync(payload as TaskCreate);
       } else if (task) {
         await updateMutation.mutateAsync({
           taskId: task.id,
-          data: data as TaskUpdate,
+          data: payload as TaskUpdate,
         });
       }
 
